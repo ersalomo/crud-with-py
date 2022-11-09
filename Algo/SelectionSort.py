@@ -1,12 +1,3 @@
-def burble_sort(arr: list[int]) -> list[int]:
-    for i in range(len(arr)-1):
-        for j in range(len(arr)-i-1):
-            if (arr[j] > arr[j+1]):
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-
-    return arr
-
-
 def selection_sort(arr: list[int]) -> list[int]:
     for i in range(len(arr)-2):
         min: int = i
@@ -37,7 +28,6 @@ def selection_sort(arr: list[int]) -> list[int]:
 arr = [100, 343, 342, 754, 875, 564, 643]
 
 print(selection_sort(arr))
-print(burble_sort(arr))
 
 
 def insertion_sort(arr: list[int]):
